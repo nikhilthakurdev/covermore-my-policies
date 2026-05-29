@@ -51,6 +51,12 @@
   cursor: pointer;
 }
 
+button:focus,
+a:focus {
+  outline: 3px solid #2454ff;
+  outline-offset: 2px;
+}
+
 @media (max-width: 768px) {
   .card-header,
   .card-details,
