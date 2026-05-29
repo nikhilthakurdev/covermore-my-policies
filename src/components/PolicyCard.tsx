@@ -21,6 +21,27 @@ function PolicyCard({ policy }: PolicyCardProps) {
         <strong>Destination:</strong> {policy.destination}
       </p>
 
+      {policy.type === "ANNUAL" ? (
+        <>
+          <p>
+            <strong>Policy Start Date:</strong>{" "}
+            {policy.startDate}
+          </p>
+
+          <p>
+            <strong>Maximum Trip Duration:</strong>{" "}
+            {policy.maxTripDuration} days
+          </p>
+        </>
+      ) : (
+        <>
+          <p>
+            <strong>Travel Date:</strong>{" "}
+            {policy.startDate} - {policy.endDate}
+          </p>
+        </>
+      )}
+
       <p>
         <strong>Excess:</strong> ${policy.excess}
       </p>
