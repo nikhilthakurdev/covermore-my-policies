@@ -3,6 +3,7 @@ export interface Policy {
   policyNumber: string;
   destination: string;
   type: "ANNUAL" | "SINGLE";
+  plan: string;
   startDate: string;
   endDate?: string;
   maxTripDuration?: number;
