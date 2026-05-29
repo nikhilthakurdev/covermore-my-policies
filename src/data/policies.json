@@ -1,0 +1,52 @@
+[
+  {
+    "id": "1",
+    "policyNumber": "725100070900",
+    "destination": "United Kingdom",
+    "type": "ANNUAL",
+    "startDate": "2025-12-24",
+    "maxTripDuration": 60,
+    "excess": 250,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "2",
+    "policyNumber": "726200000007",
+    "destination": "India",
+    "type": "SINGLE",
+    "startDate": "2026-06-01",
+    "endDate": "2026-06-15",
+    "excess": 100,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "3",
+    "policyNumber": "726100029411",
+    "destination": "New Zealand",
+    "type": "SINGLE",
+    "startDate": "2026-05-01",
+    "endDate": "2026-05-11",
+    "excess": 250,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "4",
+    "policyNumber": "726500000008",
+    "destination": "Australia",
+    "type": "ANNUAL",
+    "startDate": "2025-11-01",
+    "maxTripDuration": 45,
+    "excess": 150,
+    "status": "ACTIVE"
+  },
+  {
+    "id": "5",
+    "policyNumber": "726700000009",
+    "destination": "Japan",
+    "type": "SINGLE",
+    "startDate": "2024-01-01",
+    "endDate": "2024-01-10",
+    "excess": 200,
+    "status": "EXPIRED"
+  }
+]
