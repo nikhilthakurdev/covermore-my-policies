@@ -1,5 +1,6 @@
 import policies from "./data/policies.json";
 import type { Policy } from "./types/policy";
+import PolicyCard from "./components/PolicyCard";
 
 function App() {
   const activePolicies = (policies as Policy[])
@@ -15,11 +16,11 @@ function App() {
       <h1>My Policies</h1>
 
       {activePolicies.map((policy) => (
-        <div key={policy.id}>
-          <h3>{policy.policyNumber}</h3>
-          <p>{policy.destination}</p>
-        </div>
-      ))}
+      <PolicyCard
+        key={policy.id}
+        policy={policy}
+      />
+    ))}
     </div>
   );
 }
