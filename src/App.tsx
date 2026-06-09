@@ -34,11 +34,11 @@ function App() {
   }, []);
 
   const activePolicies = policies
-    .filter((policy) => policy.status === "ACTIVE")
+    .filter((policy) => policy.status.toLowerCase() === "active")
     .sort(
       (a, b) =>
-        new Date(a.startDate).getTime() -
-        new Date(b.startDate).getTime()
+        new Date(a.policyStart).getTime() -
+        new Date(b.policyStart).getTime()
     );
 
   const startIndex = (page - 1) * ITEMS_PER_PAGE;
@@ -91,7 +91,7 @@ function App() {
         !error &&
         paginatedPolicies.map((policy) => (
           <PolicyCard
-            key={policy.id}
+            key={policy.policyNumber}
             policy={policy}
           />
         ))}

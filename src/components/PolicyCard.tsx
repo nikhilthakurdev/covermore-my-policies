@@ -21,14 +21,14 @@ function PolicyCard({ policy }: Props) {
         <div>
           <p>
             <strong>Destination:</strong>{" "}
-            {policy.destination}
+            {policy.destinations.map((d) => d.name).join(", ")}
           </p>
 
-          {policy.type === "ANNUAL" ? (
+          {policy.type === "Annual" ? (
             <>
               <p>
                 <strong>Policy Start Date:</strong>{" "}
-                {format(new Date(policy.startDate), "dd MMM yyyy")}              
+                {format(new Date(policy.policyStart), "dd MMM yyyy")}              
              </p>
 
               <p>
@@ -39,9 +39,9 @@ function PolicyCard({ policy }: Props) {
           ) : (
             <p>
               <strong>Travel Date:</strong>{" "}
-            {format(new Date(policy.startDate), "dd MMM yyyy")}
+            {format(new Date(policy.policyStart), "dd MMM yyyy")}
               {" - "}
-            {policy.endDate && format(new Date(policy.endDate), "dd MMM yyyy")}
+            {format(new Date(policy.policyEnd), "dd MMM yyyy")}
             </p>
           )}
         </div>
@@ -49,7 +49,7 @@ function PolicyCard({ policy }: Props) {
         <div>
           <p>
             <strong>Plan:</strong>{" "}
-            {policy.plan}
+            {policy.planName}
           </p>
 
           <p>
