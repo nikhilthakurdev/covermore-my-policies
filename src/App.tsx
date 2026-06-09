@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import type { Policy } from "./types/policy";
 import PolicyCard from "./components/PolicyCard";
 import { getPolicies } from "./services/policyService";
+import { isActivePolicy } from "./utils/policyStatus";
 
 function App() {
   const [page, setPage] = useState(1);
@@ -33,8 +34,9 @@ function App() {
     fetchPolicies();
   }, []);
 
+  // Filter for active policies and sort by start date
   const activePolicies = policies
-    .filter((policy) => policy.status.toLowerCase() === "active")
+    .filter((policy) => isActivePolicy(policy.status))
     .sort(
       (a, b) =>
         new Date(a.policyStart).getTime() -

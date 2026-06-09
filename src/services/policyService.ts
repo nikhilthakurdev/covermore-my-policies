@@ -1,17 +1,30 @@
 import type { Policy } from "../types/policy";
-import policiesData from "../data/policies.json";
 
 /**
  * Mock API service for policy data
- * Simulates network latency and returns policy data asynchronously
+ * Fetches policies via HTTP fetch (simulating real API behavior)
+ * Simulates network latency and handles errors like production APIs
  */
 
 const MOCK_LATENCY_MS = 500; // Simulate network delay
 
 export async function getPolicies(): Promise<Policy[]> {
-  // Simulate network latency
-  await new Promise((resolve) => setTimeout(resolve, MOCK_LATENCY_MS));
+  try {
+    // Fetch from public folder like a real API would
+    const response = await fetch("/policies.json");
 
-  // Return the JSON payload
-  return policiesData as Policy[];
+    if (!response.ok) {
+      throw new Error(`Failed to fetch policies: ${response.statusText}`);
+    }
+
+    // Simulate network latency
+    await new Promise((resolve) => setTimeout(resolve, MOCK_LATENCY_MS));
+
+    // Parse and return the JSON payload
+    const data = await response.json();
+    return data as Policy[];
+  } catch (error) {
+    console.error("Error fetching policies:", error);
+    throw error;
+  }
 }
