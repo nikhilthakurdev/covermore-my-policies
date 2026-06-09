@@ -1,57 +1,117 @@
 [
   {
-    "id": "1",
     "policyNumber": "725100070900",
-    "destination": "United Kingdom",
-    "type": "ANNUAL",
-    "plan": "Annual Multi-trip",
-    "startDate": "2025-12-24",
+    "policyStart": "2025-12-24",
+    "policyEnd": "2026-12-23",
+    "primaryTravellerFirstname": "Test_Neal",
+    "primaryTravellerLastName": "Test_Kohler",
+    "primaryTravellerPhoneNumber": "384738293",
+    "status": "Active",
+    "destinations": [
+      {
+        "code": "GBR",
+        "name": "United Kingdom"
+      }
+    ],
+    "alphaCode": "CBA0010",
+    "iSO3CountryOfResidence": "AU",
+    "underwriterCode": "Zurich",
+    "groupCode": "CB",
+    "type": "Annual",
+    "excess": 250,
     "maxTripDuration": 60,
-    "excess": 250,
-    "status": "ACTIVE"
+    "planName": "Comprehensive"
   },
   {
-    "id": "2",
     "policyNumber": "726200000007",
-    "destination": "India",
-    "type": "SINGLE",
-    "plan": "International Comprehensive",
-    "startDate": "2026-06-01",
-    "endDate": "2026-06-15",
+    "policyStart": "2026-06-01",
+    "policyEnd": "2026-06-15",
+    "primaryTravellerFirstname": "Pradeep",
+    "primaryTravellerLastName": "Sekar",
+    "primaryTravellerPhoneNumber": "",
+    "status": "Active",
+    "destinations": [
+      {
+        "code": "IND",
+        "name": "India"
+      }
+    ],
+    "alphaCode": "CBA0010",
+    "iSO3CountryOfResidence": "AU",
+    "underwriterCode": "Zurich",
+    "groupCode": "CB",
+    "type": "Single Trip",
     "excess": 100,
-    "status": "ACTIVE"
+    "maxTripDuration": 0,
+    "planName": "Comprehensive"
   },
   {
-    "id": "3",
     "policyNumber": "726100029411",
-    "destination": "New Zealand",
-    "type": "SINGLE",
-    "plan": "International Comprehensive",
-    "startDate": "2026-05-01",
-    "endDate": "2026-05-11",
+    "policyStart": "2026-05-01",
+    "policyEnd": "2026-05-11",
+    "primaryTravellerFirstname": "Test",
+    "primaryTravellerLastName": "Pradeep",
+    "primaryTravellerPhoneNumber": "0987654321",
+    "status": "Active",
+    "destinations": [
+      {
+        "code": "NZL",
+        "name": "New Zealand"
+      }
+    ],
+    "alphaCode": "CBA0010",
+    "iSO3CountryOfResidence": "AU",
+    "underwriterCode": "Zurich",
+    "groupCode": "CB",
+    "type": "Single Trip",
     "excess": 250,
-    "status": "ACTIVE"
+    "maxTripDuration": 0,
+    "planName": "Comprehensive"
   },
   {
-    "id": "4",
-    "policyNumber": "726500000008",
-    "destination": "Australia",
-    "type": "ANNUAL",
-    "plan": "Annual Multi-trip",
-    "startDate": "2025-11-01",
-    "maxTripDuration": 45,
-    "excess": 150,
-    "status": "ACTIVE"
+    "policyNumber": "725100076334",
+    "policyStart": "2026-01-13",
+    "policyEnd": "2027-01-12",
+    "primaryTravellerFirstname": "Test_Virginia",
+    "primaryTravellerLastName": "Test_Olson",
+    "primaryTravellerPhoneNumber": "384738293",
+    "status": "Active",
+    "destinations": [
+      {
+        "code": "GBR",
+        "name": "United Kingdom"
+      }
+    ],
+    "alphaCode": "CBA0010",
+    "iSO3CountryOfResidence": "AU",
+    "underwriterCode": "Zurich",
+    "groupCode": "CB",
+    "type": "Annual",
+    "excess": 250,
+    "maxTripDuration": 60,
+    "planName": "Comprehensive"
   },
   {
-    "id": "5",
-    "policyNumber": "726700000009",
-    "destination": "Japan",
-    "type": "SINGLE",
-    "plan": "International Comprehensive",
-    "startDate": "2024-01-01",
-    "endDate": "2024-01-10",
-    "excess": 200,
-    "status": "EXPIRED"
+    "policyNumber": "725100076336",
+    "policyStart": "2025-12-11",
+    "policyEnd": "2025-12-22",
+    "primaryTravellerFirstname": "Test_Alexander",
+    "primaryTravellerLastName": "Test_Brekke",
+    "primaryTravellerPhoneNumber": "384738293",
+    "status": "Expired",
+    "destinations": [
+      {
+        "code": "COK",
+        "name": "Cook Islands"
+      }
+    ],
+    "alphaCode": "CBA0010",
+    "iSO3CountryOfResidence": "AU",
+    "underwriterCode": "Zurich",
+    "groupCode": "CB",
+    "type": "Single Trip",
+    "excess": 100,
+    "maxTripDuration": 0,
+    "planName": "Essentials"
   }
 ]

@@ -1,12 +1,23 @@
+export interface Destination {
+  code: string;
+  name: string;
+}
+
 export interface Policy {
-  id: string;
   policyNumber: string;
-  destination: string;
-  type: "ANNUAL" | "SINGLE";
-  plan: string;
-  startDate: string;
-  endDate?: string;
-  maxTripDuration?: number;
+  policyStart: string;
+  policyEnd: string;
+  primaryTravellerFirstname: string;
+  primaryTravellerLastName: string;
+  primaryTravellerPhoneNumber: string;
+  status: "Active" | "Expired";
+  destinations: Destination[];
+  alphaCode: string;
+  iSO3CountryOfResidence: string;
+  underwriterCode: string;
+  groupCode: string;
+  type: "Annual" | "Single Trip";
   excess: number;
-  status: "ACTIVE" | "EXPIRED";
+  maxTripDuration: number;
+  planName: string;
 }
